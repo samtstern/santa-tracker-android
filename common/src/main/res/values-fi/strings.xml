@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Takaisin karttaan</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Takaisin kylään</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Tämä Joulupukin jäljittimen versio on vanhentunut. Päivitä uusimpaan versioon Play Kaupassa.</string>
+</resources>

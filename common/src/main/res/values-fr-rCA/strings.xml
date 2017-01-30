@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Revenir à la carte</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Revenir au village</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Cette version de Sur les traces du père Noël est périmée. Veuillez visiter la boutique Google Play Store pour obtenir la plus récente version.</string>
+</resources>

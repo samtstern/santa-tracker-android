@@ -51,7 +51,7 @@
             android:layout_centerHorizontal="true"
             android:focusable="true"
             android:focusableInTouchMode="false"
-            android:nextFocusDown="@id/markers"
+            android:nextFocusDown="@id/cards_view_pager"
             android:textStyle="bold"
             android:padding="@dimen/button_side_padding"
             android:text="@string/track_santa"
@@ -102,7 +102,7 @@
 
     <android.support.v17.leanback.widget.VerticalGridView
         style="?attr/rowsVerticalGridStyle"
-        android:id="@+id/markers"
+        android:id="@+id/santa_markers"
         android:nextFocusUp ="@id/launch_button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

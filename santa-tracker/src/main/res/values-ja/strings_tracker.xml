@@ -28,7 +28,7 @@
   <string name="santa_update" translation_description="Heading for Status messages from Santa">サンタさんの最新情報</string>
   <string name="elapsed_time" translation_description="Heading for elapsed time">経過時間</string>
   <string name="wikipedia" translation_description="Label for button to show a wikipedia page.">ウィキペディア</string>
-  <string name="arrival" translation_description="Label for the time Santa arriving at a city">到着時刻</string>
+  <string name="arrival" translation_description="Label for the time Santa arriving at a city">サンタさんの到着時刻</string>
   <string name="weather" translation_description="Label for the weather (temperature) of a city">天気情報</string>
   <string name="weather_format" translation_description="Temperature expression, like 23 C / 73 F">%1$s °C / %2$s °F</string>
   <string name="did_you_know_attribution" translation_description="Attribution of 'Did you know' facts to the 'National Geographic Bee'">National Geographic Beeが明かす世界の真実</string>

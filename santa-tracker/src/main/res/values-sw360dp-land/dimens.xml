@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Village dimensions -->
+    <dimen name="detail_backdrop_height">275dp</dimen>
+    <dimen name="ornament_margin_top">25dp</dimen>
+    <dimen name="counter_margin_top">40dp</dimen>
+</resources>

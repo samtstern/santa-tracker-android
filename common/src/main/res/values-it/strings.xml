@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Torna alla mappa</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Torna al villaggio</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Questa versione di Segui Babbo Natale non è aggiornata. Visita il Play Store per effettuare l\'aggiornamento alla versione più recente.</string>
+</resources>

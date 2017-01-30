@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Voltar ao mapa</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Voltar à aldeia</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">A versão da aplicação Viagem do Pai Natal está desatualizada. Visite a Play Store para atualizar para a versão mais recente.</string>
+</resources>

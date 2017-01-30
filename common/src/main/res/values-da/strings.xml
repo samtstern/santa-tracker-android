@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Tilbage til kortet</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Tilbage til landsbyen</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Denne version af Følg julemanden er forældet. Gå til Play Butik for at opdatere til den nyeste version.</string>
+</resources>

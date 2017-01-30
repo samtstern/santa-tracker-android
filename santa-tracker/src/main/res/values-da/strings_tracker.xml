@@ -2,7 +2,7 @@
 <resources>
   <string name="santaDashboard" translation_description="A grouping of Santa's status on a dashboard">Julemandens instrumentbræt</string>
   <string name="current_location" translation_description="Where is Santa now. Label in all capital letters.">NUVÆRENDE PLACERING</string>
-  <string name="presents_delivered" translation_description="How many presents has Santa delivered. Label in all capital letters.">ANTAL LEVEREDE GAVER</string>
+  <string name="presents_delivered" translation_description="How many presents has Santa delivered. Label in all capital letters.">LEVEREDE GAVER</string>
   <string name="santa_status" translation_description="What's Santa saying. Label in all capital letters.">JULEMANDENS STATUS</string>
   <string name="arriving_in" translation_description="How much longer until Santa arrives at the next stop.Label in all capital letters.">ANKOMMER OM</string>
   <string name="departing_in" translation_description="How much longer until Santa departs current location. Label in all capital letters.">REJSER OM</string>

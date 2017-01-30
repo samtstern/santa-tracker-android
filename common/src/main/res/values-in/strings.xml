@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Balik ke peta</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Balik ke desa</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Pelacak Sinterklas versi ini sudah usang. Kunjungi Play Store untuk update ke versi terbaru.</string>
+</resources>

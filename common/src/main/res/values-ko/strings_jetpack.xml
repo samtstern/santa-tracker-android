@@ -2,5 +2,7 @@
 <resources>
   <string name="why_sign_in" translation_description="Encouragement text shown beside Sign In button.">로그인하여 업적을 달성하고 점수를 게시해 보세요.</string>
   <string name="play_again" translation_description="Button text for playing the game again">다시 하기</string>
+  <string name="return_to_map" translation_description="Button text for returning to map in Present Go">지도로 돌아가기</string>
   <string name="score" translation_description="Player's total score after playing the game">점수</string>
+  <string name="quit_bar_label" translation_description="Button text for quitting the game">지도로 돌아가기</string>
 </resources>

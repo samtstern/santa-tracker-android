@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Torna al mapa</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Torna a l\'aldea</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Aquesta versió de Segueix el Pare Noel està obsoleta. Visita Play Store per actualitzar l\'aplicació a la versió més recent.</string>
+</resources>

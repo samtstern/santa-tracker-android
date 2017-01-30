@@ -8,22 +8,25 @@
 
         <activity
             android:name="com.google.android.apps.santatracker.rocketsleigh.RocketSleighActivity"
-            android:screenOrientation="sensorLandscape"
+            android:exported="true"
+            android:screenOrientation="landscape"
             android:configChanges="layoutDirection|orientation|uiMode|screenLayout|screenSize"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- Accepts URIs that begin with "http://google.com/santatracker/android/rocketsleigh" -->
-                <data android:scheme="http"
+                <!-- Accepts URIs that begin with "https://google.com/santatracker/android/rocketsleigh" -->
+                <data android:scheme="https"
                     android:host="google.com"
                     android:pathPrefix="/santatracker/android/rocketsleigh" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.google.android.apps.santatracker.rocketsleigh.EndGameActivity"
-            android:screenOrientation="sensorLandscape"
+            android:screenOrientation="landscape"
+            android:exported="false"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
     </application>
 </manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="best_score_margin_top">20dp</dimen>
+  <dimen name="final_score_max_height">30dp</dimen>
+  <dimen name="centered_score_max_height">60dp</dimen>
+  <dimen name="share_image_size">240dp</dimen>
+  <dimen name="game_overlay_image_size">70dp</dimen>
+  <dimen name="game_overlay_image_padding">8dp</dimen>
+  <dimen name="game_overlay_text_size">16sp</dimen>
+  <dimen name="game_overlay_button_width">90dp</dimen>
+</resources>

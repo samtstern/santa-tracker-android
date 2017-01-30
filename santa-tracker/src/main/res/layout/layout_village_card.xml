@@ -40,8 +40,8 @@
         tools:visibility="gone">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/card_lock_size"
+            android:layout_height="@dimen/card_lock_size"
             android:layout_gravity="center_horizontal|bottom"
             android:src="@drawable/locked"
             android:contentDescription="@null"/>
@@ -53,9 +53,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:padding="@dimen/card_padding_big_verb_text"
-        android:gravity="center"
-        android:rotation="-10"
         tools:text="Play"
-        style="@style/BigVerbText"/>
+        style="@style/BigVerbText.Rotated"/>
 
 </com.google.android.apps.santatracker.launch.SquareFrameLayout>

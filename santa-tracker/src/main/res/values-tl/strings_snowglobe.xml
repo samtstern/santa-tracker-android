@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <resources>
   <string name="snowglobe_processing_message" translation_description="In-progress message on dialog shown when a customised snow globe/ornament is being created on the device.">Binubuo ang Iyong Palamuti!</string>
   <string name="snowglobe_take_picture_button" translation_description="Label for button that opens the camera to take a photo. Short 1-2 word string">Kumuha ng Larawan</string>

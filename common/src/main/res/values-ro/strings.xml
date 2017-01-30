@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Înapoi la hartă</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Înapoi în sat</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Această versiune a aplicației Pe urmele lui Moș Crăciun este învechită. Accesează Magazinul Google Play pentru cea mai nouă versiune.</string>
+</resources>

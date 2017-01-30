@@ -39,6 +39,7 @@
             android:src="@drawable/santacam"
             android:visibility="gone"
             app:elevation="@dimen/fab_elevation"
+            app:fabSize="normal"
             tools:visibility="visible" />
 
     </FrameLayout>

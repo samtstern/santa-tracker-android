@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="error_start_session_failed" translation_description="Error message from Cast MediaRouteProvider that indicates that the provider was not able to connect to the selected Cast device. [CHAR LIMIT=NONE]">ไม่สามารถเริ่มเซสชันด้วยอุปกรณ์ Chromecast ได้</string>
+  <string name="error_session_ended" translation_description="Error message from Cast MediaRouteProvider that indicates that the provider has lost its connection to the selected Cast device. [CHAR LIMIT=NONE]">ขาดการเชื่อมต่อกับอุปกรณ์ Chromecast</string>
+  <string name="error_ramp_command_failed" translation_description="Error message from Cast MediaRouteProvider that indicates that the provider got an error when sending a media command (e.g., load media, pause, etc.) to the selected Cast device. [CHAR LIMIT=NONE]">ควบคุมสื่อไม่สำเร็จ</string>
+  <string name="error_no_session" translation_description="Error message  from Cast MediaRouteProvider that indicates that the user's device is not connected to a Cast device.">ไม่ได้เชื่อมต่อกับอุปกรณ์ Chromecast ในขณะนี้</string>
+</resources>

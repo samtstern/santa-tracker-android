@@ -6,6 +6,7 @@
     <string name="analytics_screen_jetpack" translatable="false">Jetpack</string>
     <string name="analytics_screen_tracker" translatable="false">Tracker</string>
     <string name="analytics_screen_castcontroller" translatable="false">CastController</string>
+    <string name="analytics_screen_city_quiz" translatable="false">CityQuiz</string>
 
     <string name="analytics_event_category_launch" translatable="false">Launch</string>
     <string name="analytics_launch_action_notification" translatable="false">Notification</string>
@@ -14,9 +15,13 @@
     <string name="analytics_launch_voice_unhandled" translatable="false">Unhandled</string>
 
     <string name="analytics_event_category_cast" translatable="false">Cast</string>
-    <string name="analytics_cast_action_connection" translatable="false">Connection</string>
+    <string name="analytics_cast_session_launch" translatable="false">ConnectionLaunchActivity</string>
+    <string name="analytics_cast_session_map" translatable="false">ConnectionMapActivity</string>
     <string name="analytics_cast_connected" translatable="false">Connected</string>
     <string name="analytics_cast_disconnected" translatable="false">Disconnected</string>
+    <string name="analytics_cast_statechange_launch" translatable="false">StateChangeLaunchActivity</string>
+    <string name="analytics_cast_statechange_map" translatable="false">StateChangeMapActivity</string>
+    <string name="analytics_cast_overlayshown" translatable="false">overlayshown</string>
 
     <string name="analytics_cast_action_opencontroller" translatable="false">OpenController</string>
     <string name="analytics_cast_controller_actionbar" translatable="false">ActionBar</string>

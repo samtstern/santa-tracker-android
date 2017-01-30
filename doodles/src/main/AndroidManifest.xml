@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.apps.santatracker.doodles">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true">
+
+        <!-- Exported so that the waterpolo game can be launched from presentquest. -->
+        <activity
+            android:name="com.google.android.apps.santatracker.doodles.PineappleActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+            <intent-filter>
+                <action android:name="com.google.android.apps.santatracker.ACTION_DOODLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

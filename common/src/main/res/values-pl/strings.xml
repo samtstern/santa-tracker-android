@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Wróć do mapy</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Wróć do wioski</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Ta wersja Trasy Świętego Mikołaja jest nieaktualna. Odwiedź Sklep Google Play, aby pobrać najnowszą wersję.</string>
+</resources>

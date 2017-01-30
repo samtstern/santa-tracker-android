@@ -33,7 +33,7 @@
   <string name="weather_format" translation_description="Temperature expression, like 23 C / 73 F">%1$s°C / %2$s°F</string>
   <string name="did_you_know_attribution" translation_description="Attribution of 'Did you know' facts to the 'National Geographic Bee'">ലോകത്തെ കുറിച്ച് നാഷണൽ ജിയോഗ്രാഫിക്ക് ബീ നൽകുന്ന രസകര വിവരങ്ങൾ</string>
   <string name="photo" translation_description="Label for button to show a photo of a place.">ഫോട്ടോ</string>
-  <string name="photos" translation_description="Label for button to show photos (plural) of a place.">ഫോട്ടോകള്‍</string>
+  <string name="photos" translation_description="Label for button to show photos (plural) of a place.">ഫോട്ടോകൾ</string>
   <string name="street_view" translation_description="Label for button to show Street View">സ്‌ട്രീറ്റ് കാഴ്‌ച</string>
   <string name="back_to_santa_cam" translation_description="Label for button to go back to the Santa cam mode.">സാന്താ കാമിലേക്ക് മടങ്ങുക</string>
   <string name="update_from_santa" translation_description="Content description for icon that indicates that the information is an update from Santa about his locations and such">സാന്തയിൽ നിന്നുള്ള വിശേഷം</string>

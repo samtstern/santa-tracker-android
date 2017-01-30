@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BigVerbText.Rotated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom|center"
+    android:paddingBottom="@dimen/fact_padding_bottom"
+    android:paddingLeft="@dimen/fact_padding_side"
+    android:paddingRight="@dimen/fact_padding_side"
+    android:textStyle="bold"
+    tools:text="@string/swimming" />

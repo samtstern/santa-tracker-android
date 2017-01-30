@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
 
     <LinearLayout
             android:id="@+id/match_main_layout"
@@ -143,7 +144,7 @@
 
     <ImageButton
             android:id="@+id/match_cancel_bar"
-            android:layout_width="fill_parent"
+            android:layout_width="150dp"
             android:layout_height="@dimen/match_score_layout_height"
             android:layout_alignParentLeft="true"
             android:layout_alignBottom="@+id/match_score_layout"
@@ -154,7 +155,8 @@
             android:scaleType="fitStart"
             android:layout_margin="0dp"
             android:padding="0dp"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            tools:visibility="visible" />
 
     <LinearLayout
             android:id="@+id/match_score_layout"
@@ -174,7 +176,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white"
+                tools:text="123" />
 
         <View
                 android:layout_width="1dp"
@@ -199,8 +202,6 @@
         <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="center">
 
@@ -210,6 +211,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/simple_pressed"
                     android:contentDescription="@string/mmg_btn_resume"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/misc_play"/>
 
@@ -219,6 +222,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/simple_pressed"
                     android:contentDescription="@string/mmg_btn_pause"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/misc_pause"
                     android:visibility="gone"/>

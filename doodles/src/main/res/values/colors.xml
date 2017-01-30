@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="swimming_pause_button_background">#ffffff</color>
+  <color name="ui_text_yellow">#fed32b</color>
+  <color name="ui_button_text">#000000</color>
+  <color name="ui_button_background">#ffffff</color>
+  <item name="game_overlay_alpha" format="float" type="color">0.80</item>
+
+  <color name="fact_overlay_opaque">#aa032702</color>
+  <color name="fact_overlay_transparent">#00032702</color>
+</resources>

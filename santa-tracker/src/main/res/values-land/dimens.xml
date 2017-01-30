@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Village dimensions -->
-    <dimen name="detail_backdrop_height">300dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
     <dimen name="ornament_margin_top">20dp</dimen>
-    <dimen name="counter_margin_top">40dp</dimen>
+    <dimen name="counter_margin_top">20dp</dimen>
 
     <!-- For supporting TV -->
 
     <!-- margins with Overscan padding -->
     <dimen name="tv_counter_margin_top">47dp</dimen>
+
+    <!-- Santa Dimensions -->
+    <item format="float" type="dimen" name="santa_scale">0.6</item>
+    <dimen name="arm_margin_right">60dp</dimen>
+    <dimen name="arm_margin_bottom">8dp</dimen>
+    <dimen name="body_margin_bottom">-70dp</dimen>
+
 
     <!-- Markers dimensions -->
     <dimen name="tv_marker_height">160dp</dimen>

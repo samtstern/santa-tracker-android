@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">返回地圖</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">返回聖誕老人村</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">目前的聖誕老人追蹤器版本已過期。請前往 Google Play 商店更新至最新版本。</string>
+</resources>

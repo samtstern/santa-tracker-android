@@ -24,7 +24,7 @@
   <string name="distance_optional_miles" translation_description="Distance converted as miles. May not be shown in some locales.">\u0020(%,d mi)</string>
   <string name="distance_mi_away" translation_description="Distance between Santa and the user current location. Mile in short.">%1$,d (de) mile distanță</string>
   <string name="did_you_know" translation_description="Heading for trivia facts.">ȘTIAȚI CĂ</string>
-  <string name="watch_movie" translation_description="Title for videos">VIZIONAȚI FILMUL</string>
+  <string name="watch_movie" translation_description="Title for videos">VIZIONEAZĂ FILMUL</string>
   <string name="santa_update" translation_description="Heading for Status messages from Santa">NOUTĂȚI DE LA MOȘ CRĂCIUN</string>
   <string name="elapsed_time" translation_description="Heading for elapsed time">TIMP SCURS</string>
   <string name="wikipedia" translation_description="Label for button to show a wikipedia page.">Wikipedia</string>

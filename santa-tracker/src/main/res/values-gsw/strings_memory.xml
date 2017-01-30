@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <resources>
   <string name="mmg_score" translation_description="Header for score">PUNKTE</string>
   <string name="mmg_level" translation_description="Header for level">LEVEL</string>

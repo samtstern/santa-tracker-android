@@ -2,5 +2,7 @@
 <resources>
   <string name="why_sign_in" translation_description="Encouragement text shown beside Sign In button.">Увійдіть, щоб розблокувати досягнення й повідомити свій результат іншим.</string>
   <string name="play_again" translation_description="Button text for playing the game again">Грати ще раз</string>
-  <string name="score" translation_description="Player's total score after playing the game">Результат</string>
+  <string name="return_to_map" translation_description="Button text for returning to map in Present Go">Назад на карту</string>
+  <string name="score" translation_description="Player's total score after playing the game">РАХУНОК</string>
+  <string name="quit_bar_label" translation_description="Button text for quitting the game">Назад на карту</string>
 </resources>

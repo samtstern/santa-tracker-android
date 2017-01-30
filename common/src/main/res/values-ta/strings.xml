@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">வரைபடத்திற்குச் செல்</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">கிராமத்திற்குச் செல்</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">சான்டா டிராக்கரின் இந்தப் பதிப்பு காலாவதியானது. Play ஸ்டோருக்குச் சென்று, சமீபத்திய பதிப்புக்குப் புதுப்பிக்கவும்.</string>
+</resources>

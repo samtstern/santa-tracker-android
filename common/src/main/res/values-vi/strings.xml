@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Quay lại bản đồ</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Quay lại làng</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Phiên bản Theo chân ông già Noel này đã cũ. Vui lòng truy cập Cửa hàng Play để cập nhật lên phiên bản mới nhất.</string>
+</resources>

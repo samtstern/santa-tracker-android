@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_screen_swimming" translatable="false">Swimming</string>
+    <string name="analytics_screen_running" translatable="false">Running</string>
+    <string name="analytics_screen_waterpolo" translatable="false">Waterpolo</string>
+</resources>

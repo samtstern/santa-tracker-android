@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <color android:color="@color/trackerPrimaryHighlight" />
+        <color android:color="@color/trackerPrimary" />
     </item>
     <item android:bottom="5dp">
         <shape android:shape="rectangle">
             <gradient
                 android:angle="270"
-                android:endColor="@color/trackerPrimaryHighlight"
+                android:endColor="@color/trackerPrimary"
                 android:startColor="@color/trackerPrimaryDark" />
+        </shape>
+    </item>
+    <item android:top="7.5dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/trackerPrimaryDark"
+                android:startColor="@color/trackerPrimary" />
         </shape>
     </item>
 </layer-list>

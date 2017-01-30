@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="@dimen/star_view_size"
+  android:layout_height="@dimen/star_view_size"
+  android:clipChildren="false"
+  android:clipToPadding="false">
+  <ImageView
+    android:id="@+id/outline"
+    android:layout_width="@dimen/star_view_image_size"
+    android:layout_height="@dimen/star_view_image_size"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/pineapple_star_empty"
+    android:layout_centerInParent="true"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"/>
+  <ImageView
+    android:id="@+id/fill"
+    android:layout_width="@dimen/star_view_image_size"
+    android:layout_height="@dimen/star_view_image_size"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/pineapple_star_filled"
+    android:layout_centerInParent="true"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"/>
+</FrameLayout>

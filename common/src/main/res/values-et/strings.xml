@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Tagasi kaardirežiimi</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Tagasi külla</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">See Santa Trackeri versioon on aegunud. Uusima versiooni leiate Google Play poest.</string>
+</resources>

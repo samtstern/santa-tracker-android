@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">മാപ്പിലേക്ക് മടങ്ങുക</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">ഗ്രാമത്തിലേക്ക് മടങ്ങുക</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">ഈ സാന്ത ട്രാക്കർ പതിപ്പ് കാലഹരണപ്പെട്ടതാണ്. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യാൻ \'പ്ലേ സ്റ്റോർ\' സന്ദർശിക്കുക.</string>
+</resources>

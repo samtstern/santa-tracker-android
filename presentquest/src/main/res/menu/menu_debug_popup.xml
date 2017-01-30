@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_drop_present"
+        android:title="Drop present" />
+
+    <item
+        android:id="@+id/item_delete_present"
+        android:title="Delete present" />
+
+    <item
+        android:id="@+id/item_play_jetpack"
+        android:title="Play jetpack" />
+
+    <item
+        android:id="@+id/item_play_present_toss"
+        android:title="Play present toss" />
+
+    <item
+        android:id="@+id/item_collect_20"
+        android:title="Collect 20" />
+
+    <item
+        android:id="@+id/item_return"
+        android:title="Return All" />
+
+    <item
+        android:id="@+id/item_downlevel"
+        android:title="Downlevel" />
+
+    <item
+        android:id="@+id/reset_prefs"
+        android:title="Reset" />
+</menu>

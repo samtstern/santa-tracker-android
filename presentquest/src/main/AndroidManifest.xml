@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.apps.santatracker.presentquest">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="com.google.android.apps.santatracker.presentquest.MapsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PresentQuest.NoActionBar" />
+
+        <activity
+            android:name="com.google.android.apps.santatracker.presentquest.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PresentQuest.NoActionBar" />
+
+        <meta-data
+            android:name="VERSION"
+            android:value="14" />
+        <meta-data
+            android:name="DATABASE"
+            android:value="present-quest.db" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.google.android.apps.santatracker.presentquest.model" />
+
+        <service
+            android:name="com.google.android.apps.santatracker.presentquest.PlacesIntentService"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -13,9 +13,9 @@
     <dimen name="card_stream_hidden_peek_height">72dp</dimen>
 
     <color name="card_background_destination">@color/SantaGreenDark</color>
-    <color name="card_background_photo">@color/SantaBlueDark</color>
+    <color name="card_background_photo">@color/trackerPrimary</color>
     <color name="card_background_movie">@color/SantaOrange</color>
-    <color name="card_background_update">@color/SantaRed</color>
+    <color name="card_background_update">@color/trackerPrimary</color>
     <color name="santacamDashboardText">@color/SantaGreenLight</color>
 
 </resources>

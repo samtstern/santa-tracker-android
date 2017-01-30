@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Google Inc. All Rights Reserved.
+ * Copyright (C) 2016 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,6 @@ import android.util.Log;
 /**
  * Singleton that manages access to internal data stored as preferences,
  *
- * @author jfschmakeit
  */
 public class SantaPreferences {
 
@@ -39,7 +38,7 @@ public class SantaPreferences {
 
     private SharedPreferences settings;
 
-    private static final String PREFENCES_FILENAME = "SantaTracker";
+    private static final String PREFERENCES_FILENAME = "SantaTracker";
 
     // Preference parameters
     private static final String PREF_TIMESTAMP = "PREF_TIMESTAMP";
@@ -63,7 +62,13 @@ public class SantaPreferences {
     private static final String PREF_ROCKETDISABLED = "PREF_ROCKETDISABLED";
     private static final String PREF_DANCERDISABLED = "PREF_DANCERDISABLED";
     private static final String PREF_SNOWDOWNDISABLED = "PREF_SNOWDOWNDISABLED";
-
+    private final static String PREF_SWIMMING_DISABLED = "PREF_SWIMMING_DISABLED";
+    private final static String PREF_BMX_DISABLED = "PREF_BMX_DISABLED";
+    private final static String PREF_RUNNING_DISABLED = "PREF_RUNNING_DISABLED";
+    private final static String PREF_TENNIS_DISABLED = "PREF_TENNIS_DISABLED";
+    private final static String PREF_WATERPOLO_DISABLED = "PREF_WATERPOLO_DISABLED";
+    private final static String PREF_CITY_QUIZ_DISABLED = "PREF_CITY_QUIZ_DISABLED";
+    private final static String PREF_PRESENT_QUEST_DISABLED = "PREF_PRESENT_QUEST_DISABLED";
     private static final String PREF_RANDVALUE = "PREF_RANDVALUE";
     private static final String PREF_DBVERSION_DEST = "PREF_DBVERSION";
     private static final String PREF_DBVERSION_STREAM = "PREF_DBSTREAMVERSION";
@@ -73,11 +78,7 @@ public class SantaPreferences {
     private static float rand;
 
     public SantaPreferences(Context context) {
-
-        // Get preferences in multi-process mode (required for Info-API task
-        // updates)
-        this.settings = context.getSharedPreferences(PREFENCES_FILENAME,
-                Context.MODE_MULTI_PROCESS);
+        settings = context.getSharedPreferences(PREFERENCES_FILENAME, Context.MODE_PRIVATE);
 
         // update the cached rand value if it has been set, otherwise it will be
         // overwritten later
@@ -105,11 +106,11 @@ public class SantaPreferences {
 
         if (oldVersion >= 1) {
             // Delete all unused cast flags from v1
-            for (String key : LegacyPrefrences.CastFlags_1.ALL_FLAGS) {
+            for (String key : LegacyPreferences.CastFlags_1.ALL_FLAGS) {
                 editor.remove(key);
             }
             // Delete all other unused flags
-            for(String key : LegacyPrefrences.PREFERENCES){
+            for (String key : LegacyPreferences.PREFERENCES){
                 editor.remove(key);
             }
         }
@@ -117,7 +118,7 @@ public class SantaPreferences {
         // store new preference version
         editor.putInt(PREF_PREFVERSION, preferenceVersion);
 
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -144,7 +145,7 @@ public class SantaPreferences {
     public void setSwitchOff(boolean switchOff) {
         Editor editor = settings.edit();
         editor.putBoolean(PREF_SWITCHOFF, switchOff);
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -157,7 +158,7 @@ public class SantaPreferences {
     public void setNextInfoAPIAccess(long time) {
         Editor editor = settings.edit();
         editor.putLong(PREF_NEXT_INFO_ACCESS_TIMESTAMP, time);
-        editor.commit();
+        editor.apply();
     }
 
     public int getRouteOffset() {
@@ -167,7 +168,7 @@ public class SantaPreferences {
     public void setRouteOffset(int routeOffset) {
         Editor editor = settings.edit();
         editor.putInt(PREF_ROUTEOFFSET, routeOffset);
-        editor.commit();
+        editor.apply();
     }
 
     public int getStreamOffset() {
@@ -177,7 +178,7 @@ public class SantaPreferences {
     public void setStreamOffset(int streamOffset) {
         Editor editor = settings.edit();
         editor.putInt(PREF_STREAMOFFSET, streamOffset);
-        editor.commit();
+        editor.apply();
     }
 
     public long getTotalPresents() {
@@ -187,7 +188,7 @@ public class SantaPreferences {
     public void setTotalPresents(long presents) {
         Editor editor = settings.edit();
         editor.putLong(PREF_TOTALPRESENTS, presents);
-        editor.commit();
+        editor.apply();
     }
 
     public void invalidateData() {
@@ -197,7 +198,7 @@ public class SantaPreferences {
         editor.putInt(PREF_ROUTEOFFSET, 0);
         editor.putInt(PREF_STREAMOFFSET, 0);
         editor.putLong(PREF_TOTALPRESENTS, 0L);
-        editor.commit();
+        editor.apply();
     }
 
     public long getOffset() {
@@ -207,18 +208,18 @@ public class SantaPreferences {
     public void setOffset(long offset) {
         Editor editor = settings.edit();
         editor.putLong(PREF_OFFSET, offset);
-        editor.commit();
+        editor.apply();
         SantaPreferences.TIME_OFFSET = offset;
     }
 
-    public long getDBTimestamp() {
+    private long getDBTimestamp() {
         return settings.getLong(PREF_TIMESTAMP, 0);
     }
 
     public void setDBTimestamp(long time) {
         Editor editor = settings.edit();
         editor.putLong(PREF_TIMESTAMP, time);
-        editor.commit();
+        editor.apply();
     }
 
     public float getRandValue() {
@@ -228,7 +229,7 @@ public class SantaPreferences {
     public void setRandValue(float value) {
         Editor editor = settings.edit();
         editor.putFloat(PREF_RANDVALUE, value);
-        editor.commit();
+        editor.apply();
 
         rand = value;
     }
@@ -239,44 +240,99 @@ public class SantaPreferences {
     public void setFingerprint(String fingerprint) {
         Editor editor = settings.edit();
         editor.putString(PREF_FINGERPRINT, fingerprint);
-        editor.commit();
+        editor.apply();
     }
 
-    public void setGamesDisabled(boolean disableGumball, boolean disableJetpack,
-                                 boolean disableMemory, boolean disableRocket,
-                                 boolean disableDancer, boolean disableSnowdown) {
+    /**
+     * Checks if all values in Switches are consistent with stored prefs.
+     */
+    public boolean gameDisabledStateConsistent(GameDisabledState state) {
+        return getGumballDisabled() == state.disableGumballGame
+                && getJetpackDisabled() == state.disableJetpackGame
+                && getMemoryDisabled() == state.disableMemoryGame
+                && getRocketDisabled() == state.disableRocketGame
+                && getDancerDisabled() == state.disableDancerGame
+                && getSnowdownDisabled() == state.disableSnowdownGame
+                && getSwimmingDisabled() == state.disableSwimmingGame
+                && getBmxDisabled() == state.disableBmxGame
+                && getRunningDisabled() == state.disableRunningGame
+                && getTennisDisabled() == state.disableTennisGame
+                && getWaterpoloDisabled() == state.disableWaterpoloGame
+                && getCityQuizDisabled() == state.disableCityQuizGame
+                && getPresentQuestDisabled() == state.disablePresentQuest;
+    }
+
+    /**
+     * Overwrite all game disabled prefs from Switches.
+     */
+    public void setGamesDisabled(GameDisabledState state) {
         Editor editor = settings.edit();
-        editor.putBoolean(PREF_GUMBALLDISABLED, disableGumball);
-        editor.putBoolean(PREF_JETPACKDISABLED, disableJetpack);
-        editor.putBoolean(PREF_MEMORYDISABLED, disableMemory);
-        editor.putBoolean(PREF_ROCKETDISABLED, disableRocket);
-        editor.putBoolean(PREF_DANCERDISABLED, disableDancer);
-        editor.putBoolean(PREF_SNOWDOWNDISABLED, disableSnowdown);
-        editor.commit();
+        editor.putBoolean(PREF_GUMBALLDISABLED, state.disableGumballGame);
+        editor.putBoolean(PREF_JETPACKDISABLED, state.disableJetpackGame);
+        editor.putBoolean(PREF_MEMORYDISABLED, state.disableMemoryGame);
+        editor.putBoolean(PREF_ROCKETDISABLED, state.disableRocketGame);
+        editor.putBoolean(PREF_DANCERDISABLED, state.disableDancerGame);
+        editor.putBoolean(PREF_SNOWDOWNDISABLED, state.disableSnowdownGame);
+        editor.putBoolean(PREF_SWIMMING_DISABLED, state.disableSwimmingGame);
+        editor.putBoolean(PREF_BMX_DISABLED, state.disableBmxGame);
+        editor.putBoolean(PREF_RUNNING_DISABLED, state.disableRunningGame);
+        editor.putBoolean(PREF_TENNIS_DISABLED, state.disableTennisGame);
+        editor.putBoolean(PREF_WATERPOLO_DISABLED, state.disableWaterpoloGame);
+        editor.putBoolean(PREF_CITY_QUIZ_DISABLED, state.disableCityQuizGame);
+        editor.putBoolean(PREF_PRESENT_QUEST_DISABLED, state.disablePresentQuest);
+        editor.apply();
     }
 
-    public boolean getGumballDisabled() {
+    boolean getGumballDisabled() {
         return settings.getBoolean(PREF_GUMBALLDISABLED, false);
     }
 
-    public boolean getJetpackDisabled() {
+    boolean getJetpackDisabled() {
         return settings.getBoolean(PREF_JETPACKDISABLED, false);
     }
 
-    public boolean getMemoryDisabled() {
+    boolean getMemoryDisabled() {
         return settings.getBoolean(PREF_MEMORYDISABLED, false);
     }
 
-    public boolean getRocketDisabled() {
+    boolean getRocketDisabled() {
         return settings.getBoolean(PREF_ROCKETDISABLED, false);
     }
 
-    public boolean getDancerDisabled() {
+    boolean getDancerDisabled() {
         return settings.getBoolean(PREF_DANCERDISABLED, false);
     }
 
-    public boolean getSnowdownDisabled() {
+    boolean getSnowdownDisabled() {
         return settings.getBoolean(PREF_SNOWDOWNDISABLED, false);
+    }
+
+    boolean getSwimmingDisabled() {
+        return settings.getBoolean(PREF_SWIMMING_DISABLED, false);
+    }
+
+    boolean getBmxDisabled() {
+        return settings.getBoolean(PREF_BMX_DISABLED, false);
+    }
+
+    boolean getRunningDisabled() {
+        return settings.getBoolean(PREF_RUNNING_DISABLED, false);
+    }
+
+    boolean getTennisDisabled() {
+        return settings.getBoolean(PREF_TENNIS_DISABLED, false);
+    }
+
+    boolean getWaterpoloDisabled() {
+        return settings.getBoolean(PREF_WATERPOLO_DISABLED, false);
+    }
+
+    boolean getCityQuizDisabled() {
+        return settings.getBoolean(PREF_CITY_QUIZ_DISABLED, false);
+    }
+
+    boolean getPresentQuestDisabled() {
+        return settings.getBoolean(PREF_PRESENT_QUEST_DISABLED, false);
     }
 
     public void setVideos(String video1, String video15, String video23) {
@@ -284,7 +340,7 @@ public class SantaPreferences {
         editor.putString(PREF_VIDEO1, video1);
         editor.putString(PREF_VIDEO15, video15);
         editor.putString(PREF_VIDEO23, video23);
-        editor.commit();
+        editor.apply();
     }
 
     public String[] getVideos() {
@@ -298,7 +354,7 @@ public class SantaPreferences {
     public void setCastDisabled(boolean disableCast) {
         Editor editor = settings.edit();
         editor.putBoolean(PREF_CASTDISABLED, disableCast);
-        editor.commit();
+        editor.apply();
     }
 
     public boolean getCastDisabled() {
@@ -308,7 +364,7 @@ public class SantaPreferences {
     public void setDestinationPhotoDisabled(boolean disablePhoto) {
         Editor editor = settings.edit();
         editor.putBoolean(PREF_PHOTODISABLED, disablePhoto);
-        editor.commit();
+        editor.apply();
     }
 
     public boolean getDestinationPhotoDisabled() {
@@ -318,7 +374,7 @@ public class SantaPreferences {
     public void setDestDBVersion(int version) {
         Editor editor = settings.edit();
         editor.putInt(PREF_DBVERSION_DEST, version);
-        editor.commit();
+        editor.apply();
     }
 
     public int getDestDBVersion() {
@@ -328,7 +384,7 @@ public class SantaPreferences {
     public void setStreamDBVersion(int version) {
         Editor editor = settings.edit();
         editor.putInt(PREF_DBVERSION_STREAM, version);
-        editor.commit();
+        editor.apply();
     }
 
     public int getStreamDBVersion() {
@@ -351,10 +407,6 @@ public class SantaPreferences {
 
     public static int getRandom(int min, int max) {
         return (int) (min + (Math.random() * ((max - min))));
-    }
-
-    public static double getRandom(double min, double max) {
-        return (min + (Math.random() * ((max - min))));
     }
 
     public static float getRandom(float min, float max) {

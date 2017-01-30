@@ -1,0 +1,5 @@
+<resources>
+  <string name="back_to_map" translation_description="Button text to take user back to map view.">Назад към картата</string>
+  <string name="back_to_village" translation_description="Button text to take user back to the village.">Назад към селцето</string>
+  <string name="go_to_play_store" translation_description="Prompt telling the user to upgrade the app">Тази версия на приложението „Къде е Дядо Коледа“ не е актуална. Моля, посетете Google Play Магазин, за да актуализирате до най-новата версия.</string>
+</resources>

@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <fragment
             android:id="@+id/game_fragment"
             android:name="com.google.android.apps.santatracker.games.gamebase.GameFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
+
+    <!-- End of Game view -->
+    <com.google.android.apps.santatracker.games.EndOfGameView
+        android:id="@+id/view_end_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="visible"
+        android:visibility="invisible" />
+
 </FrameLayout>

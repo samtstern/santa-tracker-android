@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/minigame_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/material_green_500"
+        tools:src="@drawable/elf_jetpack_card_small" />
+
+    <TextView
+        android:id="@+id/minigame_text"
+        style="@style/BigVerbText.Rotated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/minigame_image"
+        android:layout_alignLeft="@+id/minigame_image"
+        android:layout_alignRight="@+id/minigame_image"
+        android:layout_alignTop="@+id/minigame_image"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/play"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"/>
+
+</RelativeLayout>
